@@ -1,0 +1,8 @@
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         ebm-rc-1-be501- 0.0.0.0         UG    600    0        0 wlo1
+10.131.0.0      0.0.0.0         255.255.0.0     U     600    0        0 wlo1
+link-local      0.0.0.0         255.255.0.0     U     1000   0        0 eth-minibot
+192.168.150.0   0.0.0.0         255.255.255.0   U     0      0        0 eth-minibot
+rpi-internal    rpi-external    255.255.255.255 UGH   0      0        0 eth-minibot
+jetson          rpi-external    255.255.255.255 UGH   0      0        0 eth-minibot

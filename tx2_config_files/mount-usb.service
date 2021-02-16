@@ -1,0 +1,12 @@
+[Unit]
+Description=Setup sd card setting.
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/mount -t exfat /dev/mmcblk1p1 /data
+RemainAfterExit=true
+StrandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target

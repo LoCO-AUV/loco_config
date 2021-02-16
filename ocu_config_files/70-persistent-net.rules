@@ -1,0 +1,3 @@
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:e0:4c:0c:0d:d3", ATTR{dev_id}=="0x0", ATTR{type}=="1", NAME="eth-aqua8"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="54:bf:64:32:fd:f8", ATTR{type}=="1", NAME="eth-loco"
+#SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:e0:4c:0d:01:46", ATTR{dev_id}=="0x0", ATTR{type}=="1", NAME="eth-minieye"

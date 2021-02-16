@@ -1,0 +1,11 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+#iface wlo1 inet manual
+
+auto eth-loco
+iface eth-loco inet static
+    address 192.168.150.14
+    netmask 255.255.255.0
+    post-up /home/irvlab/loco-routing.bash 192.168.150.14 192.168.150.43 wlo1 eth-loco 192.168.150.0

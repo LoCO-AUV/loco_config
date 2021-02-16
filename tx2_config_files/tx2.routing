@@ -1,0 +1,7 @@
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         ebm-rc-1-be501- 0.0.0.0         UG    600    0        0 wlan0
+10.131.0.0      *               255.255.0.0     U     600    0        0 wlan0
+link-local      *               255.255.0.0     U     1000   0        0 l4tbr0
+172.17.0.0      *               255.255.0.0     U     0      0        0 docker0
+192.168.55.0    *               255.255.255.0   U     0      0        0 l4tbr0

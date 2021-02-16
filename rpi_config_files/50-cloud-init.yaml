@@ -1,0 +1,16 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth-int:
+     dhcp4: no
+     addresses: [192.168.210.43/24]
+#     gateway4: 192.168.210.43
+     nameservers:
+       addresses: [8.8.8.8,8.8.4.4]
+    eth-ext:
+      dhcp4: no
+      addresses: [192.168.150.43/24]
+      gateway4: 192.168.150.14
+      nameservers:
+        addresses: [8.8.8.8,8.8.8.4]

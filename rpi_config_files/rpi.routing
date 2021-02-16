@@ -1,0 +1,8 @@
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         ocu             0.0.0.0         UG    0      0        0 eth-ext
+default         ebm-rc-1-be501- 0.0.0.0         UG    600    0        0 wlan0
+10.131.0.0      0.0.0.0         255.255.0.0     U     600    0        0 wlan0
+link-local      0.0.0.0         255.255.0.0     U     1000   0        0 wlan0
+192.168.150.0   0.0.0.0         255.255.255.0   U     0      0        0 eth-ext
+192.168.210.0   0.0.0.0         255.255.255.0   U     0      0        0 eth-int

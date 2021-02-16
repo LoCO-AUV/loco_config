@@ -1,0 +1,11 @@
+[Unit]
+Description=Setup the USBFS memory fix.
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'echo 4096 > /sys/module/usbcore/parameters/usbfs_memory_mb'
+RemainAfterExit=true
+StrandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target

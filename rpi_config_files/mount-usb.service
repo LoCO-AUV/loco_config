@@ -1,0 +1,13 @@
+[Unit]
+Description=Setup the USBFS memory fix.
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/mount -t exfat /dev/sda1 /data
+RemainAfterExit=true
+StrandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
+

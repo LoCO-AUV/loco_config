@@ -1,0 +1,19 @@
+127.0.0.1	localhost
+127.0.1.1	Katla
+
+192.168.2.44	vision
+192.168.2.43	control aqua
+
+192.168.150.43 rpi-external rpi
+192.168.210.43 rpi-internal 
+192.168.210.44 jetson tx2
+
+#PI3 
+#10.42.1.231	edgebot
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters

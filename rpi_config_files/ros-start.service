@@ -1,0 +1,15 @@
+
+[Unit]
+Description=ROS setup and default start
+After=network.target
+
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=10
+User=nvidia
+ExecStart=/bin/bash /home/irvlab/ros-start.bash
+
+[Install]
+WantedBy=multi-user.target
